@@ -9,7 +9,6 @@ function App() {
   const [fade, setFade] = useState(true);
 
   const changeBackground = (imagePath: string) => {
-    if (+imagePath === background) return;
 
     setFade(false);
 
@@ -62,9 +61,9 @@ function App() {
       name: "Minecraft",
     },
     {
-      capa: "/images/redfall-capa.jpg",
-      background: "/images/redfall-background.png",
-      name: "Redfall",
+      capa: "/images/brotato-capa.png",
+      background: "/images/brotato-background.png",
+      name: "Brotato",
     },
   ];
 
@@ -110,9 +109,9 @@ function App() {
 
         </nav>
 
-        <main className="flex flex-col items-center gap-8 w-full max-w-[1500px] px-4 flex-1 mt-[35vh]">
+        <main className="flex flex-col items-center gap-5 w-full max-w-[1500px] px-4 flex-1 mt-[35vh]">
 
-          <div className="flex flex-wrap justify-center gap-5">
+          <div className="flex flex-wrap justify-center items-end gap-5">
 
             {games.map((game) => (
               <BgImage
@@ -127,7 +126,7 @@ function App() {
             
           </div>
 
-          <div className="flex flex-wrap justify-center gap-5 mt-4">  
+          <div className="flex flex-wrap justify-center gap-5">  
 
             <div
               className="relative w-[295px] h-[175px] rounded-md bg-cover bg-center"
